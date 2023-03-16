@@ -1,1 +1,2 @@
+这是Git的公钥配置说明，Gitee的配置说明可以自行搜索相关博客解决：
 https://blog.csdn.net/qq_43705131/article/details/107965888
