@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://getbootstrap.com/docs/4.0/examples/dashboard/ -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>二班任务分配表</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{../../css/bootstrap.min.css}">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" th:href="@{../../css/dashboard.css}">
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+</head>
+
+<body>
+<!--顶部菜单 -->
+<div th:replace="~{topleft::topnav}"></div>
+<div class="container-fluid">
+    <div class="row">
+        <!--左菜单 -->
+        <div th:replace="~{topleft::#sidebarMenu(lurl='leftuser')}"></div>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="table-responsive">
+                <table class="table table-sm table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>学生编号</th>
+                        <th>项目编号</th>
+                        <th>项目名称</th>
+                        <th>项目主管姓名</th>
+                        <th>项目组成员</th>
+                        <th>分工模块</th>
+                        <th>所属院系</th>
+                        <th>所属年级</th>
+                        <th>所属班级</th>
+                        <th>审核结果</th>
+                        <th>主管考核结果</th>
+                        <th>成员考核结果</th>
+                        <th>项目总进度</th>
+                        <th>进度系数</th>
+                        <th>更新日期</th>
+                        <th>备注</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="cgl:${classGroupsList}">
+                        <!--                        <td th:text="${cgl.id}"></td>-->
+                        <td th:text="${cgl.std_number}"></td>
+                        <td th:text="${cgl.project_number}"></td>
+                        <td th:text="${cgl.project_name}"></td>
+                        <td th:text="${cgl.project_leader}"></td>
+                        <td th:text="${cgl.project_member}"></td>
+                        <td th:text="${cgl.project_assignment}"></td>
+                        <td th:text="${cgl.information}"></td>
+                        <td th:text="${cgl.class_grade}"></td>
+                        <td th:text="${cgl.class_number}"></td>
+                        <td th:text="${cgl.findings_result}"></td>
+                        <td th:text="${cgl.leader_result}"></td>
+                        <td th:text="${cgl.member_result}"></td>
+                        <td th:text="${cgl.total_progress}"></td>
+                        <td th:text="${cgl.progress_nun}"></td>
+                        <td th:text="${cgl.update_time}"></td>
+                        <td th:text="${cgl.remark}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <td><a href="javascript:gotoClassThree()">测试</a></td>
+            <button type="button" onclick="gotoClassThree()">test</button>
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+<!--<script type="text/javascript" th:src="@{/js/jquery-3.3.1.min.js}"></script>-->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/popper.min.js"></script>
+<script type="text/javascript" src="../../js/feather.min.js"></script>
+<!-- Icons -->
+<script>
+    feather.replace()
+</script>
+<script type="text/javascript">
+    function gotoClassThree() {
+        console.log("3");
+        alert("3");
+    }
+</script>
+
+</body>
+
+</html>

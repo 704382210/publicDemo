@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.szpx.mapper.ClassGroupsMapper">
+    <!--按班级查询信息 -->
+<!--    <select id="getListByClassNumber" resultType="com.szpx.entity.ClassGroups" >-->
+<!--        select * from class_groups-->
+<!--&#45;&#45;          where class_number=#{class_number}-->
+<!--        &lt;!&ndash;        <trim prefix="where" prefixOverrides="and || or">&ndash;&gt;-->
+<!--        &lt;!&ndash;            <if test="name!=null and name!=''">and name like concat('%',#{name},'%')</if>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <if test="sex!=null and sex!=''">and sex=#{sex}</if>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </trim>&ndash;&gt;-->
+<!--    </select>-->
+</mapper>
