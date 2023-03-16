@@ -48,6 +48,13 @@ public class ClassGroupsTest {
         for (ClassGroups sqlcg:cg){
             System.out.println(sqlcg.toString());
         }
+
+        ClassGroups classThree = new ClassGroups();
+        classThree.setClass_number("软件工程1班");
+        List<ClassGroups> c3 = classGroupsService.getListByClassNumber(classThree);
+        for (ClassGroups cg3 : c3){
+            System.out.println(cg3.toString());
+        }
     }
 
 }
