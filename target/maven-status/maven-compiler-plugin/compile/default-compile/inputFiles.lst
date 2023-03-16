@@ -1,0 +1,14 @@
+/workspace/publicDemo/src/main/java/com/szpx/mapper/ClassGroupsMapper.java
+/workspace/publicDemo/src/main/java/com/szpx/service/classGroupsService/ClassGroupsService.java
+/workspace/publicDemo/src/main/java/com/szpx/service/impl/UserServiceImpl.java
+/workspace/publicDemo/src/main/java/com/szpx/service/UserService.java
+/workspace/publicDemo/src/main/java/com/szpx/mapper/UserMapper.java
+/workspace/publicDemo/src/main/java/com/szpx/controller/classgroups/ClassGroupsController.java
+/workspace/publicDemo/src/main/java/com/szpx/DemoApplication.java
+/workspace/publicDemo/src/main/java/com/szpx/interceptor/LoginInterceptor.java
+/workspace/publicDemo/src/main/java/com/szpx/entity/ClassGroups.java
+/workspace/publicDemo/src/main/java/com/szpx/service/classGroupsService/impl/ClassGroupsServiceImpl.java
+/workspace/publicDemo/src/main/java/com/szpx/controller/UserController.java
+/workspace/publicDemo/src/main/java/com/szpx/config/DruidConfig.java
+/workspace/publicDemo/src/main/java/com/szpx/config/MvcConfig.java
+/workspace/publicDemo/src/main/java/com/szpx/entity/User.java
